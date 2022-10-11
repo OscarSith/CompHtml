@@ -8,7 +8,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /(node_modules)/,
+        exclude: /node_modules/,
         loader: "babel-loader",
         options: { presets: ["@babel/env"] },
       },
@@ -16,9 +16,19 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        type: "asset",
+      },
     ],
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
+  resolve: {
+    extensions: [".js", ".jsx"],
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      "@images": path.resolve(__dirname, "src/assets/images/"),
+    },
+  },
   output: {
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/dist/",
@@ -30,6 +40,7 @@ module.exports = {
     },
     port: 3000,
     compress: true,
+    historyApiFallback: true,
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 };

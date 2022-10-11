@@ -1,14 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
+import { Header } from "@/Header/Header";
+import { Footer } from "./Footer";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App text-center">
-        <h1>Probando REACT FROM SCRATCH</h1>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <>
+      <Header />
+      <main>
+        <div className="container py-4">
+          <div className="row">
+            <div className="col">
+              <h2>Página principal</h2>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+};
 
 export default App;
