@@ -1,23 +1,26 @@
 import React from "react";
-import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "@/Header/Header";
 import { Footer } from "./Footer";
 
+import "./App.css";
+import { Home } from "./Pages/Home";
+import { CodigoSeguridad } from "./Pages/CodigoSeguridad";
+
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <main>
         <div className="container py-4">
-          <div className="row">
-            <div className="col">
-              <h2>Página principal</h2>
-            </div>
-          </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/codigo-seguridad" element={<CodigoSeguridad />} />
+          </Routes>
         </div>
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 };
 
