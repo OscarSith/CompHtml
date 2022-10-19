@@ -10,12 +10,3 @@ export const ContenedorMedios = styled.div`
     letter-spacing: 1px;
   }
 `;
-
-export const BotonEnviarCodigo = styled.button`
-  background-color: #ff944d;
-
-  &:hover {
-    color: white;
-    background-color: #666666;
-  }
-`;

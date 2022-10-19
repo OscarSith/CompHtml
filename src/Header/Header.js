@@ -9,7 +9,7 @@ import logo from "@images/logo_compensar.png";
 
 const Header = () => {
   return (
-    <MainHeader>
+    <MainHeader className="sticky-top">
       <div className="container-fluid">
         <div className="row justify-content-between align-items-center px-md-5 py-2 shadow-sm bg-white">
           <div className="col-auto">
