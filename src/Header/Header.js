@@ -6,6 +6,7 @@ import { Nav } from "./Nav/Nav";
 import { MainHeader, InputGroupHeader, UlMainLinks } from "./styles";
 
 import logo from "@images/logo_compensar.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,9 +14,9 @@ const Header = () => {
       <div className="container-fluid">
         <div className="row justify-content-between align-items-center px-md-5 py-2 shadow-sm bg-white">
           <div className="col-auto">
-            <a href="#">
+            <Link to="/">
               <img src={logo} alt="Logo Principal" />
-            </a>
+            </Link>
           </div>
           <div className="col-auto">
             <InputGroupHeader className="position-relative">

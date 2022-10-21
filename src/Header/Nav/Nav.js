@@ -8,7 +8,7 @@ const LINKS = [
     id: 1,
     title: "Personas",
     subTitle: "Afiliacion y Servicios de Caja",
-    url: "/codigo-seguridad",
+    url: "/zona-transaccional/codigo-seguridad",
   },
   {
     id: 2,

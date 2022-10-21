@@ -14,16 +14,19 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <main>
-        <div className="container py-4">
+        <div className="container pb-4 pt-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/codigo-seguridad" element={<CodigoSeguridad />} />
             <Route
-              path="/validar-codigo-seguridad"
+              path="/zona-transaccional/codigo-seguridad"
+              element={<CodigoSeguridad />}
+            />
+            <Route
+              path="/zona-transaccional/validar-codigo-seguridad"
               element={<ValidarCodigoSeguridad />}
             />
             <Route
-              path="/administrar-mis-datos"
+              path="/zona-transaccional/administrar-mis-datos"
               element={<AdministrarMisDatos />}
             />
           </Routes>
