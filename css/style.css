@@ -1,0 +1,48 @@
+
+/* nav */
+.icons-nav a :hover{
+    color: #FF6600;
+}
+.icon-search-nav .rounded-circle {
+    background: #FF6600;
+    width: 26px;
+    height: 26px;
+    padding: 1px 0 2px 2px;
+    top: 3px;
+    right: 3px;
+}
+/* Under nav */
+.main-nav {
+    box-shadow: 0px 2px 4px #00000035;
+}
+.under-nav{
+    background-color: #F6F6F6;
+}
+.under-nav p{
+    font-size: 12px;
+}
+
+/* Miga de pan*/
+.breadcrumb-item a{
+    color: #FF6600;
+}
+.main-container{
+    background-color: #EEEEEE;
+}
+.main-container .avatar{
+    background-color: #FF6600;
+    height: 64px;
+    width: 64px;
+}
+.main-container .card-title{
+    font-size: 21px;
+}
+.list-items a{
+    box-shadow: 0 0 2px #777777 ;
+    border-radius: 4px;
+}
+.list-items a:hover, 
+.list-items a.seleccionado {
+    background-color: #777777 !important;
+    color: white !important;
+}
