@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import { MigaPan } from "@/Components/MigaPan";
-import { ContenedorCodigo } from "@/Components/ContenedorCodigo";
-import { ButtonCodigo } from "@/Components/ButtonCodigo";
+import { MigaPan } from "@src/Components/MigaPan";
+import { ContenedorCodigo } from "@src/Components/ContenedorCodigo";
+import { ButtonCodigo } from "@src/Components/ButtonCodigo";
 
 import { ContenedorMedios } from "./styles";
 

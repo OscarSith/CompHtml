@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "@/Header/Header";
+import { Header } from "@src/Header/Header";
 import { Footer } from "./Footer";
 
 import "./App.css";

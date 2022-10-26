@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { ContenedorCodigo } from "@/Components/ContenedorCodigo";
-import { ButtonCodigo } from "@/Components/ButtonCodigo";
-import { MigaPan } from "@/Components/MigaPan";
+import { ContenedorCodigo } from "@src/Components/ContenedorCodigo";
+import { ButtonCodigo } from "@src/Components/ButtonCodigo";
+import { MigaPan } from "@src/Components/MigaPan";
 
 import { InputCodigo } from "./styles";
 
