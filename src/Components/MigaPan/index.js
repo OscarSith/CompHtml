@@ -16,15 +16,21 @@ const MigaPan = () => {
 
   locationArray.forEach((path, i) => {
     if (path === "") {
-      pages.push({ url: "/", name: "home", active: false });
+      pages.push({ id: i, url: "/", name: "home", active: false });
     } else if (i !== locationArray.length - 1) {
       pages.push({
+        id: i,
         url: "/" + path,
         name: getNameFromUrl(path),
         active: false,
       });
     } else {
-      pages.push({ url: "/" + path, name: getNameFromUrl(path), active: true });
+      pages.push({
+        id: i,
+        url: "/" + path,
+        name: getNameFromUrl(path),
+        active: true,
+      });
     }
   });
 
@@ -45,7 +51,7 @@ const MigaPan = () => {
             classes += " active";
           }
           return (
-            <li className={classes}>
+            <li className={classes} key={page.id}>
               {page.url === "/" ? (
                 <Link to={page.url} className="home fs-5">
                   {page.url === "/" ? (
