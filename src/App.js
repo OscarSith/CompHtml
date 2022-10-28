@@ -8,6 +8,7 @@ import { Home } from "./Pages/Home";
 import { CodigoSeguridad } from "./Pages/CodigoSeguridad";
 import { ValidarCodigoSeguridad } from "./Pages/ValidarCodigoSeguridad";
 import { AdministrarMisDatos } from "./Pages/AdministrarMisDatos";
+import { ZonaTransaccional } from "./Pages/ZonaTransaccional";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <div className="container pb-4 pt-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/zona-transaccional" element={<ZonaTransaccional />} />
             <Route
               path="/zona-transaccional/codigo-seguridad"
               element={<CodigoSeguridad />}

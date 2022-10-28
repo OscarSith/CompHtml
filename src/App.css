@@ -1,3 +1,13 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-semi-black: #555555;
+  --color-darkgray: #777777;
+  --color-gray: #f3f3f3;
+  --color-lightgray: #eeeeee;
+  --color-orange: #ff6600;
+}
+
 .App {
   margin: 1rem;
   font-family: Arial, Helvetica, sans-serif;
