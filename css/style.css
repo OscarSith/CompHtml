@@ -46,3 +46,15 @@
     background-color: #777777 !important;
     color: white !important;
 }
+/* Enlaces descripción */
+.bg-white h3 {
+    border-bottom: dashed 3px #777;
+
+}
+
+/* Buttons */
+.btn-enlaces {
+    background-color: #FF6600;
+    border-color: #FF6600;
+
+}
