@@ -29,7 +29,7 @@ const traerEnlaces = () => {
                 event.preventDefault();
 
                 const enlace = event.target;
-                const seleccionado = event.target.closest("ul").querySelector("a.seleccionado");
+                const seleccionado = enlace.closest("ul").querySelector("a.seleccionado");
                 if (seleccionado != null) {
                     seleccionado.classList.remove("seleccionado");
                 }
@@ -54,10 +54,41 @@ const traerEnlaces = () => {
                     item_html += `<li class="mb-3">
                                     <a href="#${subEnlaces[i].id}" class="text-decoration-none fs-5 text-secondary d-block bg-white p-2">${subEnlaces[i].nombre}</a>
                                 </li>`;
-                    
                 }
 
                 document.getElementById("sub-lista").innerHTML = item_html;
+                document.getElementById("descripcion").innerHTML = "";
+
+                const nodoListaSubEnlaces = document.querySelectorAll("#sub-lista a");
+                for(let i = 0; i < nodoListaSubEnlaces.length; i++){
+                    nodoListaSubEnlaces[i].addEventListener("click", (evento) => {
+                        
+                        let subEnlaceSelect = evento.target.closest("ul").querySelector("a.seleccionado");
+                        if (subEnlaceSelect != null) {
+                            subEnlaceSelect.classList.remove("seleccionado");
+                        }
+                        evento.target.classList.add("seleccionado");
+
+                        let idElementoSelect = evento.target.getAttribute("href").substr(1);
+                        //console.log(idElementoSelect);
+
+                    // TODO: Usar el método find del arreglo listaEnlaces
+                       const itemEncontrado = listaEnlaces.find((item) => {
+                           if (idElementoSelect == item.id) {
+                                return item;
+                           }; 
+                        });
+                        let descripcion = `<div class="py-3 px-4 bg-white rounded-3">
+                                                <h4 class="pb-3 ">${itemEncontrado.nombre}</h4>
+                                                <p class="my-4">${itemEncontrado.descripcion}</p>
+                                                <div class="d-grid gap-2">
+                                                    <a href="${itemEncontrado.url}" class="rounded py-2 px-3 btn-enlaces text-light text-center text-decoration-none">${itemEncontrado.nombre}</a>
+                                                </div>                                                
+                                            </div>`;
+                        
+                        document.getElementById("descripcion").innerHTML = descripcion;
+                    });                    
+                }
             })
         })
     });
