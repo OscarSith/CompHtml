@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compensar - Administración de datos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="row position-relative py-3 main-nav">
+            <div class="col">
+                <figure class="mb-0">
+                    <a href="#">
+                        <img src="images/logo_compensar.png" alt="logo compensar">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="col d-flex align-items-center">
+                <div class="icon-search-nav position-relative w-100">
+                    <input class="form-control rounded-5 form-control-sm" type="search" placeholder="¿Buscas algo?">
+                    <button class="btn d-inline-block rounded-circle text-light position-absolute" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>            
+                </div>
+            </div>
+            <div class="col text-end icons-nav">
+                    <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
+                        <i class="bi bi-calendar3"></i>
+                    </a>                 
+                    <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
+                        <i class="bi bi-bell"></i>
+                    </a>            
+                    <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
+                        <i class="bi bi-geo-alt"></i>
+                    </a>               
+                    <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
+                        <i class="bi bi-person-circle"></i>
+                    </a>               
+            </div>
+        </nav>
+        <nav class="row under-nav">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <ul class="list-unstyled d-flex mb-0">
+                                <li>
+                                    <a href="#" class="d-block p-3 text-decoration-none text-dark">
+                                        <strong>PERSONA</strong>
+                                        <p class="mb-0">Afiliación y Sevicios de Caja</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-block p-3 text-decoration-none text-dark">
+                                        <strong>EMPRESA</strong> 
+                                        <p class="mb-0">Afiliación y Sevicios de Caja</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-block p-3 text-decoration-none text-dark">
+                                        <strong>SALUD</strong> 
+                                        <p class="mb-0">EPS y Plan Complementario</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-block p-3 text-decoration-none text-dark">
+                                        <strong>SOBRE COMPENSAR</strong>
+                                        <p class="mb-0">Información Institucional</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-end">
+                            <div class="row">
+                                <div class="col">
+                                    <a class=" text-secondary fs-5" href="#"><i class="bi bi-facebook me-2"></i></a>
+                                    <a class=" text-secondary fs-5" href="#"><i class="bi bi-twitter me-2"></i></a>
+                                    <a class=" text-secondary fs-5" href="#"><i class="bi bi-youtube me-2"></i></a>
+                                    <a class=" text-secondary fs-5" href="#"><i class="bi bi-linkedin me-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <nav class="col" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb border-bottom fs-3 py-3">
+                        <li class="breadcrumb-item">
+                            <a  href="#"><i class="bi bi-house-fill"></i></a>
+                        </li>
+                      <li class="breadcrumb-item active" aria-current="page">Zona transaccional</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Administrar mis datos</h1>
+            <div class="row rounded-5 usuario-administrar-datos my-4 p-3 align-items-center">
+                <div class="col-2">
+                    <div class="position-relative d-inline-block avatar">
+                        <img src="images/foto-perfil.jpg" alt="" class="rounded-circle img-fluid">
+                        <i class="bi bi-pencil-fill rounded-circle position-absolute bg-white d-flex align-items-center justify-content-center"></i>
+                    </div>                  
+                </div>
+                <div class="col">
+                    <h5>María José Pérez Gómez</h5>
+                    <p>C.C. 1000000090</p>
+                </div>
+                <div class="col">
+                    <div class="dropdown text-end">
+                        <a class="btn btn-light border-bottom shadow-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Seleccione un familiar
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-8 rounded-4 shadow p-4 me-3">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                                <i class="bi bi-person-check-fill"></i>
+                                Datos básicos
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                                <i class="bi bi-phone"></i>
+                                Datos del contacto
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                                <i class="bi bi-person-plus-fill"></i>
+                                Datos adicionales
+                            </button>     
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="row p-4 border-bottom">
+                                <div class="col-6">
+                                    <h6>Nombres</h6>
+                                    <p>Maria José</p>
+                                    <h6>Fecha de nacimiento</h6>
+                                    <p>1 enero 1999</p>
+                                    <h6>Estado civil</h6>
+                                    <p>Casada</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>Apellidos</h6>
+                                    <p>Pérez Gomez</p>
+                                    <h6>Género</h6>
+                                    <p>Femenino</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="py-4 termino-msj">
+                                    <p><i class="bi bi-check-lg pe-2"></i>Autorización para el tratamiento de datos personales</p>
+                                </div> 
+                                <button class="rounded-5 btn-amd px-5 py-1">
+                                    Actualizar datos
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <div class="row p-4 border-bottom">
+                                <div class="col-6">
+                                    <h6>Correo electrónico</h6>
+                                    <p>ojmaria12@gmail.com</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>Celular</h6>
+                                    <p>31522217222</p>
+                                </div>
+                            </div>
+                            <div class="row p-4 border-bottom">
+                                <div class="col-6">
+                                    <h6>Teléfono fijo</h6>
+                                    <p>2221133</p>
+                                    <h6>Localidad</h6>
+                                    <p>Engativá</p>
+                                    <h6>Departamento</h6>
+                                    <p>Bogotá D.C</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>Dirección</h6>
+                                    <p>Calle avenida 72 #80-00 Apto. 101</p>
+                                    <h6>Barrio</h6>
+                                    <p>Santa Helenita</p>
+                                    <h6>Ciudad</h6>
+                                    <p>Bogotá D.C</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="py-4 termino-msj">
+                                    <p><i class="bi bi-check-lg pe-2"></i>Autorización para el tratamiento de datos personales</p>
+                                    <p><i class="bi bi-x-lg pe-2"></i>Acepto recibir mensajes de texto con información comercial de compensar. Costo de mensaje será asumido por compensar.</p>
+                                </div>
+                                <button class="rounded-5 btn-amd px-5 py-1">
+                                    Actualizar datos
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="row p-4 border-bottom">
+                                <div class="col-6">
+                                    <h6>Orientación sexual</h6>
+                                    <p>No aplica</p>
+                                    <h6>Factor vulnerabilidad</h6>
+                                    <p>No aplica</p>
+                                    <h6>Código ocupación</h6>
+                                    <p>9629 Otras ocupaciones</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>Nivel escolaridad</h6>
+                                    <p>Postgrado</p>
+                                    <h6>Pertenencia étnica</h6>
+                                    <p>No aplica</p>
+                                    <h6>Preferencias de contacto</h6>
+                                    <p>Correo electrónico</p>
+                                </div>
+                            </div>
+                            <div class="m-4">
+                                <button class="rounded-5 btn-amd px-5 py-1">
+                                    Actualizar datos
+                                </button>
+                                <div class="row bloque-celeste rounded mt-5 p-2 justify-content-center align-items-center">
+                                    <div class="col-1">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    <div class="col-6 txt">
+                                        Cuéntanos qué te gusta y qué información quieres recibir
+                                    </div>
+                                    <div class="col-5 text-end">
+                                        <button type="button" class="btn btn-light rounded-5 px-5">
+                                            Configurar gustos
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3 rounded-4 p-4">
+                    <div class="row">
+                        <div class="col-12 mb-3 shadow rounded-4">
+                            <i class="bi bi-people-fill"></i>
+                            <h5>Caja de compensación</h5>
+                            <p>
+                                <i class="bi bi-check-lg"></i>
+                                Afiliado
+                            </p>
+                            <p>
+                                <i class="bi bi-calendar3"></i>
+                                Desde 12/12/2022
+                            </p>
+                            <p>
+                                <i class="bi bi-people-fill"></i>
+                                Categoría B
+                            </p>
+                        </div>
+                        <div class="col-12 mb-3 shadow rounded-4">
+                            <i class="bi bi-plus-circle"></i>
+                            <h5>Salud - EPS</h5>
+                            <p>
+                                <i class="bi bi-check-lg"></i>
+                                Afiliado
+                            </p>
+                            <p>
+                                <i class="bi bi-calendar3"></i>
+                                Desde 12/12/2022
+                            </p>
+                            <p>
+                                <i class="bi bi-building"></i>
+                                Sede Calle 26
+                            </p>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h5>Salud - Plan Complementario</h5>
+                            <p>
+                                <i class="bi bi-check-lg"></i>
+                                Afiliado
+                            </p>
+                            <p>
+                                <i class="bi bi-calendar3"></i>
+                                Desde 12/12/2022
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -49,12 +49,89 @@
 /* Enlaces descripción */
 .bg-white h4 {
     border-bottom: dashed 3px #777;
-
 }
 
 /* Buttons */
 .btn-enlaces {
     background-color: #FF6600;
     border-color: #FF6600;
-
 }
+
+/* ADMINISTRAR MIS DATOS HTML */
+
+/* Div usuario */
+.usuario-administrar-datos {
+background-color: #F2F0EE;
+}
+.avatar img {
+    width: 100px;
+}
+.avatar i {
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    top: 0;
+}
+
+/* Div información personal */
+ul.nav-tabs .nav-link {
+    border-bottom: 3px solid transparent;
+    color: #666666;
+    font-size: 18px;
+}
+
+ul.nav-tabs .nav-link.active {
+    border-bottom-color: #77C8D2 !important;
+    font-weight: bold;
+}
+ul.nav-tabs .nav-link.active i{
+    color: #77C8D2;
+}
+
+.nav-tabs .nav-link:hover, 
+.nav-tabs .nav-link:focus {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom-color: transparent;
+}
+.btn-amd{
+    background-color: #FF6600;
+    border-color: #FF6600;
+    font-weight: bolder;
+}
+.bi.bi-check-lg.pe-2{
+    color: #99CC33;
+    font-size: 20px;
+}
+.bi.bi-x-lg.pe-2{
+    color: #CC0033;
+}
+.bi.bi-heart{
+    color: white;
+    font-size: 32px;
+}
+.termino-msj{
+    font-size: 12px;
+}
+.bloque-celeste{
+    background-color: #77C8D2;
+}
+.bloque-celeste .txt{
+    font-size: 21px;
+    font-weight: bolder;
+}
+.bloque-celeste button{
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
