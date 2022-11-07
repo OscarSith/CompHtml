@@ -124,6 +124,21 @@ ul.nav-tabs .nav-link.active i{
 .bloque-celeste button{
     font-weight: bolder;
 }
+.contenedor-icono{
+    left: 0;
+    right: 0;
+    top: -16px;
+}
+.contenedor-icono .icon-circle{
+    border: 1px solid #FF6600;
+    background-color: #FF6600;
+    color: black;
+}
+.text-icons i{
+    color: #FF6600;
+}
+
+
 
 
 
