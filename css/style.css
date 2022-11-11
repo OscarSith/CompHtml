@@ -96,9 +96,10 @@ ul.nav-tabs .nav-link.active i{
     border-bottom-color: transparent;
 }
 .btn-amd{
-    background-color: #FF6600;
-    border-color: #FF6600;
-    font-weight: bolder;
+    background-color: #FF944D;
+    border-color: #FF944D;
+    font-weight: bold;
+    border: 0;
 }
 .bi.bi-check-lg.pe-2{
     color: #99CC33;
@@ -137,16 +138,14 @@ ul.nav-tabs .nav-link.active i{
 .text-icons i{
     color: #FF6600;
 }
-
-
-
-
-
-
-
-
-
-
-
+/* Formulario datos básicos */
+.form-datos-basicos label {
+    color: #707070;
+    font-size: 12px;
+}
+.form-datos-basicos h3 {
+    color: #666;
+    font-size: 24px;
+}
 
 
