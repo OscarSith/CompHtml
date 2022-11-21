@@ -40,7 +40,7 @@ const traerUsuarios = () => {
         document.getElementById("pref-contacto").innerText = usuario.datos_adicionales.pref_contacto;
 
         document.getElementById("btn-mostrar-form-datos-basicos").addEventListener("click", mostrarFormularioDatosBasicos);
-
+        document.getElementById("btn-back").addEventListener("click", mostrarContenidoAnterior);
         // TODO: estas lineas iran en la funcion mostrarFormularioDatosBasicos
         document.getElementById('input-primer-nombre').value = data_usuario.primer_nombre;
         document.getElementById('input-segundo-nombre').value = data_usuario.segundo_nombre;
@@ -72,8 +72,12 @@ const traerUsuarios = () => {
 const mostrarFormularioDatosBasicos = (evento) => {
     document.getElementById("panel-datos-basicos").classList.add("d-none");
     document.getElementById("form-datos-basicos").classList.remove("d-none");
-
-    document.getElementById('input-primer-nombre').value = data_usuario.primer_nombre;
 };
+
+const mostrarContenidoAnterior = (evento) => {
+    //console.log(evento);
+    document.getElementById("form-datos-basicos").classList.add("d-none");
+    document.getElementById("panel-datos-basicos").classList.remove("d-none");
+}
 
 traerUsuarios();

@@ -155,7 +155,7 @@
                       </ul>
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                            <div id="panel-datos-basicos" class="d-none">
+                            <div id="panel-datos-basicos" class="">
                                 <div class="row p-4 border-bottom">
                                     <div class="col-6">
                                         <h6>Nombres</h6>
@@ -181,7 +181,31 @@
                                     </button>
                                 </div>
                             </div>
-                            <div id="form-datos-basicos" class="form-datos-basicos">
+                            <div id="form-datos-basicos" class="form-datos-basicos d-none">
+                                <div class="row justify-content-center mb-5 mt-4">
+                                    <div class="col-10" id="wizard-actualizar-datos">
+                                        <div class="row text-center">
+                                            <div class="col active">
+                                                <div class="rounded-5 border d-inline-block stepper text-center">
+                                                    1
+                                                </div>
+                                                <div class="txt-stepper mt-2">Actualizar</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="rounded-5 border d-inline-block stepper text-center">
+                                                    2
+                                                </div>
+                                                <div class="txt-stepper mt-2">Resumen</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="rounded-5 border d-inline-block stepper text-center">
+                                                    3
+                                                </div>
+                                                <div class="txt-stepper mt-2">Adjuntar</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <h3 class="mx-4 mt-4">Actualizar datos</h3>
                                 <div class="mt-3 mx-4">
                                     <div class="row gx-5 mb-2">
@@ -229,8 +253,10 @@
                                         </div>
                                     </div>
                                     <hr class="my-5">
-                                    <button class="rounded-5 btn-amd px-5 py-2" id="btn-actualizar-datos">Continuar al paso 2</button>
-                                    
+                                    <div>
+                                        <button class="rounded-5 btn-amd px-5 py-2" id="btn-actualizar-datos">Continuar al paso 2</button>
+                                        <button type="button" class="btn btn-link ms-4 text-dark" id="btn-back">Cancelar</button>
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>

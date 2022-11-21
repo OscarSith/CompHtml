@@ -147,5 +147,42 @@ ul.nav-tabs .nav-link.active i{
     color: #666;
     font-size: 24px;
 }
+.form-datos-basicos .stepper {
+    background-color: #E5E5E5;
+    color: #666;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 8px;
+    position: relative;
+}
+.form-datos-basicos .col.active .stepper{
+    background-color: #FF944D;
+    color: #000;
+}
+.form-datos-basicos .col.active .txt-stepper{
+    color: #000;
+}
+.form-datos-basicos .txt-stepper{
+    color: #666;
+    font-size: 14px;
+    line-height: 21px;
+}
+.form-datos-basicos .stepper::before,
+.form-datos-basicos .stepper::after{
+    position: absolute;
+    content: '';
+    bottom: 15px;
+    right: -202px;
+    height: 8px;
+    width: 177px;
+    background: #E5E5E5;
+    border-radius: 4px;
+}
 
-
+.form-datos-basicos .row .col:last-child .stepper::after,
+.form-datos-basicos .row .col:last-child .stepper::before {
+    display: none;
+}
