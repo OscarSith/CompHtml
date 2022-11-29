@@ -48,6 +48,17 @@ const traerUsuarios = () => {
         document.getElementById("btn-paso2").addEventListener("click", mostrarContenidoPaso2);
         document.getElementById("btn-paso3").addEventListener("click", mostrarContenidoPaso3);
 
+        const listaNodosSelectFile = document.querySelectorAll(".link-select-file");
+        const listaNodosInputFile = document.querySelectorAll(".input-documento");
+
+        for (let i = 0; i < listaNodosSelectFile.length; i++) {
+            const nodoHtml = listaNodosSelectFile[i];
+            nodoHtml.addEventListener("click", buscarArchivo);
+
+            listaNodosInputFile[i].addEventListener("change", capturarImagen);
+        }
+        
+
         // TODO: estas lineas iran en la funcion mostrarFormularioDatosBasicos
         document.getElementById('input-primer-nombre').value = data_usuario.primer_nombre;
         document.getElementById('input-segundo-nombre').value = data_usuario.segundo_nombre;
@@ -198,6 +209,53 @@ const mostrarContenidoPaso3 = (evento) => {
     document.querySelector("#wizard-actualizar-datos .column2").classList.remove("active");
     document.querySelector("#wizard-actualizar-datos .column2").classList.add("check-listo");
     document.querySelector("#wizard-actualizar-datos .column3").classList.add("active");
+}
+
+const buscarArchivo = (evento) => {
+    evento.preventDefault();
+    evento.target.closest(".col").querySelector(".input-documento").click();
+
+}
+
+const capturarImagen = (evento) => {
+    const contenedorAdjuntarDatos = evento.target.closest(".txt-adjuntar-datos");
+    const miArchivo = evento.target.files[0];
+    const htmlArchivo = `<div class="row input-adjuntar-datos rounded py-3 g-0">
+                            <div class="col text-center">
+                                <i class="bi bi-file-earmark-spreadsheet"></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="mb-0">${miArchivo.name}</p>
+                            </div>
+                            <div class="col text-center">
+                                <button type="button" class="border-0 bg-transparent btn-eliminar-archivo">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                        </div>`;
+                        
+    contenedorAdjuntarDatos.querySelector(".item-prueba").innerHTML = htmlArchivo;
+    contenedorAdjuntarDatos.querySelector(".btn-eliminar-archivo").addEventListener("click", (evento) => {
+        const contenedor = evento.target.closest(".txt-adjuntar-datos");
+        contenedor.querySelector("i.bi-check-lg").classList.add("d-none");
+        contenedor.querySelector(".div-espacio").classList.remove("d-none");
+        contenedor.querySelector(".item-prueba").innerHTML = `<div class="row input-adjuntar-datos2 p-3 g-0 align-items-center">
+                                                                    <div class="col-1">
+                                                                        <i class="bi bi-cloud-upload"></i>
+                                                                    </div>
+                                                                    <div class="col-11">
+                                                                        <p class="mb-0">Arrastre y suelte su archivo aquí o <br>
+                                                                            <a href="#" class="link-select-file">seleccione su archivo</a>
+                                                                        </p>
+                                                                    </div>                                                   
+                                                                </div>`
+        contenedor.querySelector(".link-select-file").addEventListener("click", buscarArchivo);
+
+    });
+
+    contenedorAdjuntarDatos.querySelector("i.bi-check-lg").classList.remove("d-none");
+    contenedorAdjuntarDatos.querySelector(".div-espacio").classList.add("d-none");
+
 }
 
 traerUsuarios();

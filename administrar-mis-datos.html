@@ -155,7 +155,7 @@
                       </ul>
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                            <div id="panel-datos-basicos" class="d-none">
+                            <div id="panel-datos-basicos" class="">
                                 <div class="row p-4 border-bottom">
                                     <div class="col-6">
                                         <h6>Nombres</h6>
@@ -181,7 +181,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div id="form-datos-basicos" class="form-datos-basicos">
+                            <div id="form-datos-basicos" class="form-datos-basicos d-none">
                                 <div class="row justify-content-center mb-5 mt-4">
                                     <div class="col-10" id="wizard-actualizar-datos">
                                         <div class="row text-center">
@@ -212,7 +212,7 @@
                                 
                                 <form id="form-actualizar-datos">
                                     <!-- Paso 1 en actualizar datos -->
-                                    <div id="actualizar-datos-paso1" class="d-none">
+                                    <div id="actualizar-datos-paso1" class="">
                                         <h3 class="mx-4 mt-4">Actualizar datos</h3>
                                         <div class="mt-3 mx-4">
                                             <div class="row gx-5 mb-2">
@@ -286,52 +286,63 @@
                                     </div>
 
                                     <!-- Paso 3 - Actualizar datos -->
-                                    <div id="actualizar-datos-paso3" class="ms-5">
+                                    <div id="actualizar-datos-paso3" class="ms-5 d-none">
                                         <h3>Adjuntar documentos</h3>
                                         <p class="mb-0">Adjunte los documentos que soporten la actualización de información.</p>
                                         <p>Tamaño máximo permitido XX MB. Formatos permitidos: PDF, JPG, PNG</p>
                                         <div class="row txt-adjuntar-datos border-top py-3">
                                             <div class="col">
                                                 <ul class="list-unstyled mb-0">
-                                                    <li>
-                                                        <i class="bi bi-check-lg pe-2 float-start"></i>
+                                                    <li class="d-flex">
+                                                        <div class="div-espacio"></div>
+                                                        <i class="bi bi-check-lg pe-2 float-start d-none"></i>
                                                         <p>Copia legible del documento de identificación por ambas caras</p>
                                                     </li>
                                                 </ul>
                                             </div>
+                                            
                                             <div class="col">
-                                                <div class="row input-adjuntar-datos rounded py-3 g-0">
-                                                    <div class="col text-center">
-                                                        <i class="bi bi-file-earmark-spreadsheet"></i>
-                                                    </div>
-                                                    <div class="col-9">
-                                                        <p class="mb-0">cedula-ciudadania-mjp.JPG</p>
-                                                    </div>
-                                                    <div class="col text-center">
-                                                        <i class="bi bi-x-lg"></i>
+                                                <div class="item-prueba dropzone">
+                                                    <div class="row input-adjuntar-datos2 p-3 g-0 align-items-center">
+                                                        <div class="col-1">
+                                                            <i class="bi bi-cloud-upload"></i>
+                                                        </div>
+                                                        <div class="col-11">
+                                                            <p class="mb-0">Arrastre y suelte su archivo aquí o <br>
+                                                                <a href="#" class="link-select-file">seleccione su archivo</a>
+                                                            </p>
+                                                        </div>                                                   
                                                     </div>
                                                 </div>
-                                                
+                                                <input type="file" class="d-none input-documento">
+ 
                                             </div>
                                         </div>
                                 
                                         <div class="row border-top border-bottom txt-adjuntar-datos py-4 ">
                                             <div class="col">
-                                                <ul class="list-unstyled mb-0 ms-4">
-                                                    <li>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li class="d-flex">
+                                                        <div class="div-espacio"></div>
+                                                        <i class="bi bi-check-lg pe-2 float-start d-none"></i>
                                                         <p>Declaración juramentada de convivencia <br> Diligenciar en línea y descargar</p>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="col">
-                                                <div class="row input-adjuntar-datos2 p-3 g-0 align-items-center">
-                                                    <div class="col-1">
-                                                        <i class="bi bi-cloud-upload"></i>
+                                                <div class="item-prueba dropzone">
+                                                    <div class="row input-adjuntar-datos2 p-3 g-0 align-items-center">
+                                                        <div class="col-1">
+                                                            <i class="bi bi-cloud-upload"></i>
+                                                        </div>
+                                                        <div class="col-11">
+                                                            <p class="mb-0">Arrastre y suelte su archivo aquí o <br>
+                                                                <a href="#" class="link-select-file">seleccione su archivo</a>
+                                                            </p>
+                                                        </div>                                                   
                                                     </div>
-                                                    <div class="col-11">
-                                                        <p class="mb-0">Arrastre y suelte su archivo aquí o seleccione su archivo</p>
-                                                    </div>                                                   
                                                 </div>
+                                                <input type="file" class="d-none input-documento">
                                             </div>
                                         </div>
                                         <p class="txt-last mt-3">Al hacer clic en Enviar consiento y autorizo de manera previa, expresa e inequívoca que mis datos personales sean tratados conforme a lo previsto en la ley 1581 de 2012 de protección de datos personales, con la finalidad de: Dar cumplimiento a obligaciones contraídas conmigo y/o mi grupo familiar. Dar cumplimiento a requerimientos legales y de organismos de control. Proveer y/o evaluar la calidad de los productos y/o servicios requeridos o no por mí. En la realización de estudios internos sobre hábitos de consumo y/o estadísticas, como del análisis del dato para mejoras de nuestros servicios. Información que será utilizada en el desarrollo de las funciones propias de Compensar, de acuerdo a lo definido en el Manual de protección de Datos Personales.</p>

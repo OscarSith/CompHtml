@@ -232,7 +232,9 @@ ul.nav-tabs .nav-link.active i{
     border: 3px dashed #77C8D2;
 
 }
-
+.div-espacio {
+    width: 28px;
+}
 #actualizar-datos-paso3 {
     margin-right: 7rem;
 }
