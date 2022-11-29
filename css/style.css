@@ -147,6 +147,7 @@ ul.nav-tabs .nav-link.active i{
     color: #666;
     font-size: 24px;
 }
+/* Wizard */
 .form-datos-basicos .stepper {
     background-color: #E5E5E5;
     color: #666;
@@ -158,12 +159,32 @@ ul.nav-tabs .nav-link.active i{
     padding-top: 8px;
     position: relative;
 }
+/* class active para el wizzard paso 1*/
 .form-datos-basicos .col.active .stepper{
     background-color: #FF944D;
     color: #000;
 }
 .form-datos-basicos .col.active .txt-stepper{
     color: #000;
+}
+/* Class check-listo, continuación de paso 1 */
+.form-datos-basicos .col.check-listo .stepper {
+    background-color: #99CC33;
+    color: white;
+}
+.form-datos-basicos .col.check-listo .txt-stepper{
+    color: #666666;
+}
+/* Ocultar check */
+.form-datos-basicos .stepper .bi-check-lg {
+    display: none;
+}
+/* Mostrar check  */
+.form-datos-basicos .check-listo .stepper .bi-check-lg {
+    display: block;
+}
+.form-datos-basicos .check-listo .stepper span {
+    display: none;
 }
 .form-datos-basicos .txt-stepper{
     color: #666;
@@ -185,4 +206,33 @@ ul.nav-tabs .nav-link.active i{
 .form-datos-basicos .row .col:last-child .stepper::after,
 .form-datos-basicos .row .col:last-child .stepper::before {
     display: none;
+}
+.icon-alert {
+    color: #E2AD32;
+    font-size: 25px;
+}
+.txt-alert {
+    font-size: 14px;
+}
+.label-dato-actualizado{
+    color: #707070;
+}
+
+/* Adjuntar datos - paso 3 */
+.txt-adjuntar-datos .col {
+    font-size: 14px;
+}
+.txt-last {
+    font-size: 12px;
+}
+.input-adjuntar-datos {
+    background-color: #F3F6ED;
+}
+.input-adjuntar-datos2 {
+    border: 3px dashed #77C8D2;
+
+}
+
+#actualizar-datos-paso3 {
+    margin-right: 7rem;
 }
