@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="container-fluid">
         <nav class="row position-relative py-3 main-nav">
@@ -25,22 +27,22 @@
                     <input class="form-control rounded-5 form-control-sm" type="search" placeholder="¿Buscas algo?">
                     <button class="btn d-inline-block rounded-circle text-light position-absolute" type="button">
                         <i class="bi bi-search"></i>
-                    </button>            
+                    </button>
                 </div>
             </div>
             <div class="col text-end icons-nav">
-                    <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
-                        <i class="bi bi-calendar3"></i>
-                    </a>                 
-                    <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
-                        <i class="bi bi-bell"></i>
-                    </a>            
-                    <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
-                        <i class="bi bi-geo-alt"></i>
-                    </a>               
-                    <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
-                        <i class="bi bi-person-circle"></i>
-                    </a>               
+                <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
+                    <i class="bi bi-calendar3"></i>
+                </a>
+                <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
+                    <i class="bi bi-bell"></i>
+                </a>
+                <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
+                    <i class="bi bi-geo-alt"></i>
+                </a>
+                <a href="#" class="text-dark fs-3 me-3 text-decoration-none">
+                    <i class="bi bi-person-circle"></i>
+                </a>
             </div>
         </nav>
         <nav class="row under-nav">
@@ -57,13 +59,13 @@
                                 </li>
                                 <li>
                                     <a href="#" class="d-block p-3 text-decoration-none text-dark">
-                                        <strong>EMPRESA</strong> 
+                                        <strong>EMPRESA</strong>
                                         <p class="mb-0">Afiliación y Sevicios de Caja</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="d-block p-3 text-decoration-none text-dark">
-                                        <strong>SALUD</strong> 
+                                        <strong>SALUD</strong>
                                         <p class="mb-0">EPS y Plan Complementario</p>
                                     </a>
                                 </li>
@@ -94,9 +96,9 @@
                 <nav class="col" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb border-bottom fs-3 py-3">
                         <li class="breadcrumb-item">
-                            <a  href="#"><i class="bi bi-house-fill"></i></a>
+                            <a href="#"><i class="bi bi-house-fill"></i></a>
                         </li>
-                      <li class="breadcrumb-item active" aria-current="page">Zona transaccional</li>
+                        <li class="breadcrumb-item active" aria-current="page">Zona transaccional</li>
                     </ol>
                 </nav>
             </div>
@@ -109,8 +111,9 @@
                 <div class="col-2">
                     <div class="position-relative d-inline-block avatar">
                         <img id="imagen-perfil" src="" alt="" class="rounded-circle img-fluid">
-                        <i class="bi bi-pencil-fill rounded-circle position-absolute bg-white d-flex align-items-center justify-content-center"></i>
-                    </div>                  
+                        <i
+                            class="bi bi-pencil-fill rounded-circle position-absolute bg-white d-flex align-items-center justify-content-center"></i>
+                    </div>
                 </div>
                 <div class="col">
                     <h5 id="nombre-completo"></h5>
@@ -118,65 +121,75 @@
                 </div>
                 <div class="col">
                     <div class="dropdown text-end">
-                        <a class="btn btn-light border-bottom shadow-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Seleccione un familiar
+                        <a class="btn btn-light border-bottom shadow-sm dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Seleccione un familiar
                         </a>
-                      
+
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-9 rounded-4 shadow p-4">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav border-bottom" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                            <button class="nav-link btn btn-link fw-bold rounded-0 px-4 active" id="home-tab"
+                                data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                                aria-controls="home-tab-pane" aria-selected="true">
                                 <i class="bi bi-person-check-fill"></i>
                                 Datos básicos
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                            <button class="nav-link btn btn-link fw-bold rounded-0 px-4" id="profile-tab"
+                                data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">
                                 <i class="bi bi-phone"></i>
                                 Datos del contacto
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                            <button class="nav-link btn btn-link fw-bold rounded-0 px-4" id="contact-tab"
+                                data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">
                                 <i class="bi bi-person-plus-fill"></i>
                                 Datos adicionales
-                            </button>     
+                            </button>
                         </li>
-                      </ul>
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
                             <div id="panel-datos-basicos" class="">
                                 <div class="row p-4 border-bottom">
                                     <div class="col-6">
                                         <h6>Nombres</h6>
-                                        <p id="nombres">Maria José</p>
+                                        <p id="nombres"></p>
                                         <h6>Fecha de nacimiento</h6>
-                                        <p id="fecha-nac">1 enero 1999</p>
+                                        <p id="fecha-nac"></p>
                                         <h6>Estado civil</h6>
-                                        <p id="estado-civil">Casada</p>
+                                        <p id="estado-civil"></p>
                                     </div>
                                     <div class="col-6">
                                         <h6>Apellidos</h6>
-                                        <p id="apellidos">Pérez Gomez</p>
+                                        <p id="apellidos"></p>
                                         <h6>Género</h6>
-                                        <p id="genero">Femenino</p>
+                                        <p id="genero"></p>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="py-4 termino-msj">
-                                        <p><i class="bi bi-check-lg pe-2"></i>Autorización para el tratamiento de datos personales</p>
-                                    </div> 
-                                    <button type="button" class="rounded-5 btn-amd px-5 py-2" id="btn-mostrar-form-datos-basicos">
+                                        <p><i class="bi bi-check-lg pe-2"></i>Autorización para el tratamiento de datos
+                                            personales</p>
+                                    </div>
+                                    <button type="button" class="rounded-5 btn-amd px-5 py-2"
+                                        id="btn-mostrar-form-datos-basicos">
                                         Actualizar datos
                                     </button>
                                 </div>
@@ -209,7 +222,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <form id="form-actualizar-datos">
                                     <!-- Paso 1 en actualizar datos -->
                                     <div id="actualizar-datos-paso1" class="">
@@ -217,32 +230,43 @@
                                         <div class="mt-3 mx-4">
                                             <div class="row gx-5 mb-2">
                                                 <div class="col">
-                                                    <label for="input-primer-nombre" class="form-label fw-bold">1er nombre</label>
-                                                    <input type="text" class="form-control" id="input-primer-nombre" name="primer_nombre">
+                                                    <label for="input-primer-nombre" class="form-label fw-bold">1er
+                                                        nombre</label>
+                                                    <input type="text" class="form-control" id="input-primer-nombre"
+                                                        name="primer_nombre">
                                                 </div>
                                                 <div class="col">
-                                                    <label for="input-segundo-nombre" class="form-label fw-bold">2do nombre</label>
-                                                <input type="text" id="input-segundo-nombre" class="form-control" aria-label="2do nombre" name="segundo_nombre">
-                                                </div>
-                                            </div>
-                                            <div class="row gx-5 mb-2">
-                                                <div class="col">
-                                                    <label for="input-primer-apellido" class="form-label fw-bold">1er apellido</label>
-                                                    <input type="text" class="form-control" id="input-primer-apellido" name="primer_apellido">
-                                                </div>
-                                                <div class="col">
-                                                    <label for="input-segundo-apellido" class="form-label fw-bold">2do apellido</label>
-                                                <input type="text" id="input-segundo-apellido" class="form-control" aria-label="2do apellido" name="segundo_apellido">
+                                                    <label for="input-segundo-nombre" class="form-label fw-bold">2do
+                                                        nombre</label>
+                                                    <input type="text" id="input-segundo-nombre" class="form-control"
+                                                        aria-label="2do nombre" name="segundo_nombre">
                                                 </div>
                                             </div>
                                             <div class="row gx-5 mb-2">
                                                 <div class="col">
-                                                    <label for="fecha-nacimiento" class="form-label fw-bold">Fecha nacimiento</label>
-                                                    <input type="date" class="form-control" id="fecha-nacimiento" name="fecha_nac">
+                                                    <label for="input-primer-apellido" class="form-label fw-bold">1er
+                                                        apellido</label>
+                                                    <input type="text" class="form-control" id="input-primer-apellido"
+                                                        name="primer_apellido">
+                                                </div>
+                                                <div class="col">
+                                                    <label for="input-segundo-apellido" class="form-label fw-bold">2do
+                                                        apellido</label>
+                                                    <input type="text" id="input-segundo-apellido" class="form-control"
+                                                        aria-label="2do apellido" name="segundo_apellido">
+                                                </div>
+                                            </div>
+                                            <div class="row gx-5 mb-2">
+                                                <div class="col">
+                                                    <label for="fecha-nacimiento" class="form-label fw-bold">Fecha
+                                                        nacimiento</label>
+                                                    <input type="date" class="form-control" id="fecha-nacimiento"
+                                                        name="fecha_nac">
                                                 </div>
                                                 <div class="col">
                                                     <label for="select-genero" class="form-label fw-bold">Género</label>
-                                                    <select id="select-genero" class="form-select" aria-label="seleccionar genero" name="genero">
+                                                    <select id="select-genero" class="form-select"
+                                                        aria-label="seleccionar genero" name="genero">
                                                         <option value="Femenino">Femenino</option>
                                                         <option value="Masculino">Masculino</option>
                                                     </select>
@@ -250,8 +274,10 @@
                                             </div>
                                             <div class="row gx-5 mb-2">
                                                 <div class="col-6">
-                                                    <label for="select-estado-civil" class="form-label fw-bold">Estado-civil</label>
-                                                    <select id="select-estado-civil" class="form-select" aria-label="seleccionar estado civil" name="estado_civil">
+                                                    <label for="select-estado-civil"
+                                                        class="form-label fw-bold">Estado-civil</label>
+                                                    <select id="select-estado-civil" class="form-select"
+                                                        aria-label="seleccionar estado civil" name="estado_civil">
                                                         <option value="Soltero">Soltero</option>
                                                         <option value="Casado" selected>Casado</option>
                                                         <option value="Viudo">Viudo</option>
@@ -261,34 +287,43 @@
                                             </div>
                                             <hr class="my-5">
                                             <div>
-                                                <button type="button" class="rounded-5 btn-amd px-5 py-2" id="btn-paso2">Continuar al paso 2</button>
-                                                <button type="button" class="btn btn-link ms-4 text-dark" id="btn-cancelar">Cancelar</button>
-                                            </div>                                    
+                                                <button type="button" class="rounded-5 btn-amd px-5 py-2"
+                                                    id="btn-paso2">Continuar al paso 2</button>
+                                                <button type="button" class="btn btn-link ms-4 text-dark"
+                                                    id="btn-cancelar">Cancelar</button>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <!-- Paso 2 - Actualizar datos -->
                                     <div id="actualizar-datos-paso2" class="d-none">
                                         <h3>¿Está seguro?</h3>
-                                        <p>Esos son los datos que ha solicitado actualizar. Por favor revise la información detenidamente y haga clic en Continuar para finalizar.</p>
+                                        <p>Esos son los datos que ha solicitado actualizar. Por favor revise la
+                                            información detenidamente y haga clic en Continuar para finalizar.</p>
                                         <div id="datos-modificados">
-                                            
+
                                         </div>
                                         <div class="alert alert-warning d-flex align-items-center w-75">
                                             <i class="bi bi-info-circle-fill icon-alert me-4"></i>
-                                            <span class="txt-alert"><b>Tenga en cuenta:</b> una vez haya finalizado la actualización de sus datos, solo podrá volverlos a modificar hasta dentro de XX días.</span>
+                                            <span class="txt-alert"><b>Tenga en cuenta:</b> una vez haya finalizado la
+                                                actualización de sus datos, solo podrá volverlos a modificar hasta
+                                                dentro de XX días.</span>
                                         </div>
                                         <div>
-                                            <button type="button" class="rounded-5 btn-amd px-5 py-2" id="btn-paso3">Continuar al paso 3</button>
-                                            <button type="button" class="btn btn-link ms-4 text-dark" id="btn-anterior">Anterior</button>
-                                            <button type="button" class="btn btn-link ms-4 text-dark" id="btn-cancelar2">Cancelar</button>
+                                            <button type="button" class="rounded-5 btn-amd px-5 py-2"
+                                                id="btn-paso3">Continuar al paso 3</button>
+                                            <button type="button" class="btn btn-link ms-4 text-dark"
+                                                id="btn-anterior">Anterior</button>
+                                            <button type="button" class="btn btn-link ms-4 text-dark"
+                                                id="btn-cancelar2">Cancelar</button>
                                         </div>
                                     </div>
 
                                     <!-- Paso 3 - Actualizar datos -->
                                     <div id="actualizar-datos-paso3" class="ms-5 d-none">
                                         <h3>Adjuntar documentos</h3>
-                                        <p class="mb-0">Adjunte los documentos que soporten la actualización de información.</p>
+                                        <p class="mb-0">Adjunte los documentos que soporten la actualización de
+                                            información.</p>
                                         <p>Tamaño máximo permitido XX MB. Formatos permitidos: PDF, JPG, PNG</p>
                                         <div class="row txt-adjuntar-datos border-top py-3">
                                             <div class="col">
@@ -296,11 +331,12 @@
                                                     <li class="d-flex">
                                                         <div class="div-espacio"></div>
                                                         <i class="bi bi-check-lg pe-2 float-start d-none"></i>
-                                                        <p>Copia legible del documento de identificación por ambas caras</p>
+                                                        <p>Copia legible del documento de identificación por ambas caras
+                                                        </p>
                                                     </li>
                                                 </ul>
                                             </div>
-                                            
+
                                             <div class="col">
                                                 <div class="item-prueba dropzone">
                                                     <div class="row input-adjuntar-datos2 p-3 g-0 align-items-center">
@@ -309,23 +345,25 @@
                                                         </div>
                                                         <div class="col-11">
                                                             <p class="mb-0">Arrastre y suelte su archivo aquí o <br>
-                                                                <a href="#" class="link-select-file">seleccione su archivo</a>
+                                                                <a href="#" class="link-select-file">seleccione su
+                                                                    archivo</a>
                                                             </p>
-                                                        </div>                                                   
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <input type="file" class="d-none input-documento">
- 
+
                                             </div>
                                         </div>
-                                
+
                                         <div class="row border-top border-bottom txt-adjuntar-datos py-4 ">
                                             <div class="col">
                                                 <ul class="list-unstyled mb-0">
                                                     <li class="d-flex">
                                                         <div class="div-espacio"></div>
                                                         <i class="bi bi-check-lg pe-2 float-start d-none"></i>
-                                                        <p>Declaración juramentada de convivencia <br> Diligenciar en línea y descargar</p>
+                                                        <p>Declaración juramentada de convivencia <br> Diligenciar en
+                                                            línea y descargar</p>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -337,26 +375,63 @@
                                                         </div>
                                                         <div class="col-11">
                                                             <p class="mb-0">Arrastre y suelte su archivo aquí o <br>
-                                                                <a href="#" class="link-select-file">seleccione su archivo</a>
+                                                                <a href="#" class="link-select-file">seleccione su
+                                                                    archivo</a>
                                                             </p>
-                                                        </div>                                                   
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <input type="file" class="d-none input-documento">
                                             </div>
                                         </div>
-                                        <p class="txt-last mt-3">Al hacer clic en Enviar consiento y autorizo de manera previa, expresa e inequívoca que mis datos personales sean tratados conforme a lo previsto en la ley 1581 de 2012 de protección de datos personales, con la finalidad de: Dar cumplimiento a obligaciones contraídas conmigo y/o mi grupo familiar. Dar cumplimiento a requerimientos legales y de organismos de control. Proveer y/o evaluar la calidad de los productos y/o servicios requeridos o no por mí. En la realización de estudios internos sobre hábitos de consumo y/o estadísticas, como del análisis del dato para mejoras de nuestros servicios. Información que será utilizada en el desarrollo de las funciones propias de Compensar, de acuerdo a lo definido en el Manual de protección de Datos Personales.</p>
-                                        
-                                        <button type="submit" class="rounded-5 btn-amd px-5 py-2 my-5" id="">Enviar actualización</button>
-                                        <button type="button" class="btn btn-link ms-4 text-dark" id="btn-anterior2">Anterior</button>
-                                        <button type="button" class="btn btn-link ms-4 text-dark" id="btn-cancelar3">Cancelar</button>
-                                       
+                                        <p class="txt-last mt-3">Al hacer clic en Enviar consiento y autorizo de manera
+                                            previa, expresa e inequívoca que mis datos personales sean tratados conforme
+                                            a lo previsto en la ley 1581 de 2012 de protección de datos personales, con
+                                            la finalidad de: Dar cumplimiento a obligaciones contraídas conmigo y/o mi
+                                            grupo familiar. Dar cumplimiento a requerimientos legales y de organismos de
+                                            control. Proveer y/o evaluar la calidad de los productos y/o servicios
+                                            requeridos o no por mí. En la realización de estudios internos sobre hábitos
+                                            de consumo y/o estadísticas, como del análisis del dato para mejoras de
+                                            nuestros servicios. Información que será utilizada en el desarrollo de las
+                                            funciones propias de Compensar, de acuerdo a lo definido en el Manual de
+                                            protección de Datos Personales.</p>
+
+                                        <button type="submit" class="rounded-5 btn-amd px-5 py-2 my-5"
+                                            id="enviar-actualizacion-usuario">
+                                            Enviar actualización
+                                        </button>
+                                        <button type="button" class="btn btn-link ms-4 text-dark"
+                                            id="btn-anterior2">Anterior</button>
+                                        <button type="button" class="btn btn-link ms-4 text-dark"
+                                            id="btn-cancelar3">Cancelar</button>
+
                                     </div>
                                 </form>
-                                
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal-actualizar-usuario" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5 m-auto fw-bold" id="exampleModalLabel">Actualización en proceso</h1>
+                                            </div>
+                                            <div class="modal-body">
+                                                Su actualización de información ha sido enviada a revisión con el
+                                                radicado #00123456789. Este proceso toma XX días hábiles a partir
+                                                del día siguiente a la radicación.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="rounded-5 btn-amd px-5 py-2 m-auto" id="btn-fin-actualizarUser" data-bs-dismiss="modal">Finalizar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
                             <div class="row p-4 border-bottom">
                                 <div class="col-6">
                                     <h6>Correo electrónico</h6>
@@ -387,15 +462,18 @@
                             </div>
                             <div>
                                 <div class="py-4 termino-msj">
-                                    <p><i class="bi bi-check-lg pe-2"></i>Autorización para el tratamiento de datos personales</p>
-                                    <p><i class="bi bi-x-lg pe-2"></i>Acepto recibir mensajes de texto con información comercial de compensar. Costo de mensaje será asumido por compensar.</p>
+                                    <p><i class="bi bi-check-lg pe-2"></i>Autorización para el tratamiento de datos
+                                        personales</p>
+                                    <p><i class="bi bi-x-lg pe-2"></i>Acepto recibir mensajes de texto con información
+                                        comercial de compensar. Costo de mensaje será asumido por compensar.</p>
                                 </div>
                                 <button class="rounded-5 btn-amd px-5 py-1">
                                     Actualizar datos
                                 </button>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                            tabindex="0">
                             <div class="row p-4 border-bottom">
                                 <div class="col-6">
                                     <h6>Orientación sexual</h6>
@@ -418,7 +496,8 @@
                                 <button class="rounded-5 btn-amd px-5 py-1">
                                     Actualizar datos
                                 </button>
-                                <div class="row bloque-celeste rounded mt-5 p-2 justify-content-center align-items-center">
+                                <div
+                                    class="row bloque-celeste rounded mt-5 p-2 justify-content-center align-items-center">
                                     <div class="col-1">
                                         <i class="bi bi-heart"></i>
                                     </div>
@@ -434,7 +513,7 @@
 
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-3 rounded-4">
                     <div class="row p-4 pt-0">
@@ -458,55 +537,58 @@
                                             <i class="bi bi-people-fill me-2"></i>
                                             Categoría B
                                         </li>
-                                    </ul>                               
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 mb-3 p-4 shadow rounded-4 position-relative">
-                           <div class="position-absolute contenedor-icono text-center">
-                            <i class="bi bi-plus icon-circle rounded-circle px-2 py-1"></i>
-                           </div>
-                           <div>
-                               <h5 class="text-center">Salud - EPS</h5>
-                               <div class="text-icons pt-3">
-                                <ul class="list-unstyled mb-0">
+                            <div class="position-absolute contenedor-icono text-center">
+                                <i class="bi bi-plus icon-circle rounded-circle px-2 py-1"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-center">Salud - EPS</h5>
+                                <div class="text-icons pt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-3">
+                                            <i class="bi bi-check-lg me-2"></i>
+                                            Afiliado
+                                        </li>
+                                        <li class="mb-3">
+                                            <i class="bi bi-calendar3 me-2"></i>
+                                            Desde 12/12/2022
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-building me-2"></i>
+                                            Sede Calle 26
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="text-icons pt-2">
+                                <h5 class="text-center">Salud - Plan Complementario</h5>
+                                <ul class="list-unstyled pt-3 mb-0">
                                     <li class="mb-3">
                                         <i class="bi bi-check-lg me-2"></i>
                                         Afiliado
                                     </li>
-                                    <li class="mb-3">
+                                    <li>
                                         <i class="bi bi-calendar3 me-2"></i>
                                         Desde 12/12/2022
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-building me-2"></i>
-                                        Sede Calle 26
                                     </li>
                                 </ul>
-                               </div>
-                           </div>
-                           <hr>
-                           <div class="text-icons pt-2">
-                               <h5 class="text-center">Salud - Plan Complementario</h5>
-                               <ul class="list-unstyled pt-3 mb-0">
-                                    <li class="mb-3">
-                                        <i class="bi bi-check-lg me-2"></i>
-                                        Afiliado
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-calendar3 me-2"></i>
-                                        Desde 12/12/2022
-                                    </li>
-                               </ul>
-                           </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
     <script src="js/usuario.js"></script>
 </body>
+
 </html>

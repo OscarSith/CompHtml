@@ -74,27 +74,26 @@ background-color: #F2F0EE;
 }
 
 /* Div información personal */
-ul.nav-tabs .nav-link {
-    border-bottom: 3px solid transparent;
+ul.nav {
+    height: 47px;
+}
+ul.nav .nav-link {
+    border-bottom: 4px solid transparent;
     color: #666666;
     font-size: 18px;
 }
 
-ul.nav-tabs .nav-link.active {
+ul.nav .nav-link.active {
     border-bottom-color: #77C8D2 !important;
-    font-weight: bold;
+    color: #000;
 }
-ul.nav-tabs .nav-link.active i{
+ul.nav .nav-link.active i{
     color: #77C8D2;
 }
-
-.nav-tabs .nav-link:hover, 
-.nav-tabs .nav-link:focus {
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    border-bottom-color: transparent;
+ul.nav .nav-link:focus {
+    box-shadow: none;
 }
+
 .btn-amd{
     background-color: #FF944D;
     border-color: #FF944D;
